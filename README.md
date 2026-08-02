@@ -14,6 +14,7 @@ A terminal-based, educational chat application built with Python's standard libr
 - Framed UTF-8 JSON protocol with a 64 KiB payload limit
 - Validation of usernames, message content, message types, framing, and JSON
 - Graceful handling of socket errors, abrupt disconnects, and server `Ctrl+C`
+- Depending on the terminal, the client may require Enter to be pressed after the server disconnects because the main thread is blocked while waiting for user input.
 - Automated protocol and loopback integration tests
 
 ## Technologies and concepts
