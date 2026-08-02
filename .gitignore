@@ -2,7 +2,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 .venv/
-.env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
 venv/
 env/
 .pytest_cache/
